@@ -35,6 +35,8 @@ ok      github.com/paskozdilar/debuglog 0.302s
 
 ## Usage
 
+Write logging code as usual:
+
 ```go
 package main
 
@@ -47,4 +49,12 @@ func main() {
     debuglog.Printf("Hello, %s!", "world")
     debuglog.Println("Hello,", "world!")
 }
+```
+
+To enable it, add Go build tag `debuglog` to your commands:
+
+```sh
+go run -tags debuglog main.go
+go build -tags debuglog main.go
+go test -tags debuglog
 ```
