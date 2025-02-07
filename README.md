@@ -58,3 +58,11 @@ go run -tags debuglog main.go
 go build -tags debuglog main.go
 go test -tags debuglog
 ```
+
+To disable it, remove the build tag:
+
+```sh
+go run main.go
+go build main.go
+go test
+```
