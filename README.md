@@ -1,6 +1,6 @@
 # debuglog
 
-Minimal Go logging library with zero runtime cost.
+Minimal Go logging library with zero runtime cost (when disabled).
 
 ## Zero runtime cost? How?
 
